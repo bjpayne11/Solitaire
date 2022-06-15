@@ -16,8 +16,6 @@ public class Talon extends CardStack {
 
 	@Override
 	public boolean validateDrag(DragItems dragItems) {
-		// TODO Auto-generated method stub
-		super.validateDrag(dragItems);
 		dragItems.setDragLevel(DragItems.DragLevel.ENTIRE_STACK);
 		return true;
 	}

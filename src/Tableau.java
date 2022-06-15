@@ -11,7 +11,6 @@ public class Tableau extends CardStack {
 
 	@Override
 	public boolean validateDrag(DragItems dragItems) {
-		super.validateDrag(dragItems);
 		if (dragItems.getSize() > 0) {
 			int location = dragItems.getCard().getParentLocation();
 			if (location > 0) {

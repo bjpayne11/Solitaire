@@ -151,13 +151,9 @@ abstract public class CardStack {
 		return new Point(origin.x + (index)*x_offset, origin.y + (index)*y_offset);
 	}
 	
-	public boolean validateDrag(DragItems dragItems) {
-		return true;
-	}
+	public abstract boolean validateDrag(DragItems dragItems); 
 	
-	 public boolean validateDrop(DragItems dragItems) {
-	 	return true;
-	 }
+	 public abstract boolean validateDrop(DragItems dragItems);
 	 
 	 public CardLabel getBlankCardLabel() {
 		 return blankCardLabel;
